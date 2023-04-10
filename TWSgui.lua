@@ -454,7 +454,16 @@ Section1:AddSlider({
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
     end
 })
-
+Section1:AddButton({
+    enabled = true,
+    text = "infinite yield",
+    tooltip = "load IY",
+    confirm = false,
+    risky = false,
+    callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
 --Slider_1:SetValue(100)
 --[[
 Section1:AddList({
